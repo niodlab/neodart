@@ -40,11 +40,12 @@ const Home = () => {
   const smoothCaption2Y = useSpring(caption2Y, springConfig);
   const smoothCaption3Opacity = useSpring(caption3Opacity, springConfig);
   const smoothCaption3Y = useSpring(caption3Y, springConfig);
+  const assetBase = import.meta.env.BASE_URL;
   const heroBackgroundImage = region === 'India'
-    ? '/images/nioDart-india-Painting.jpg'
+    ? `${assetBase}images/nioDart-india-Painting.jpg`
     : region === 'MiddleEast'
-      ? '/images/nioDart-middleEast-Painting.png'
-      : '/images/nioDart-US-Painting.png';
+      ? `${assetBase}images/nioDart-middleEast-Painting.png`
+      : `${assetBase}images/nioDart-US-Painting.png`;
 
   return (
     <motion.div
