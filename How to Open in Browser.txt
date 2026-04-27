@@ -1,0 +1,27 @@
+From your project folder, open the site like this:
+
+Open Terminal.
+Go to the project folder(COPY PASTE VELOW LINE):
+
+cd "/Users/murukangopinathan/Documents/CodexFiles/The Nio-D-Art"
+
+--CLICK-ENTER
+
+
+Start the app(COPY PASTE VELOW LINE):
+
+npm run dev
+
+--CLICK-ENTER
+
+
+
+Wait until Terminal shows a line like:
+Local:   http://localhost:5173/
+Hold Command and click that link in Terminal, or copy it and paste it into Chrome/Safari:
+http://127.0.0.1:5173/
+If clicking does not work, open it manually:
+
+Open Chrome or Safari
+Paste http://localhost:5173/
+Press Enter
