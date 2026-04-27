@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Heart, ShoppingBag, Sparkles, Truck } from 'lucide-react';
-import artworks from '../data/artworks.json';
+import artworks from '../data/artworks';
 import useCartStore from '../store/useCartStore';
 import useCheckoutStore from '../store/useCheckoutStore';
 import useWishlistStore from '../store/useWishlistStore';

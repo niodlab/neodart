@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ArrowRight, Play, Star, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import artworks from '../data/artworks.json';
+import artworks from '../data/artworks';
 import { useTheme } from '../hooks/useTheme';
 
 const Home = () => {

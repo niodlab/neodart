@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Navigate, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 
 // Theme & AI Agent
@@ -54,6 +54,7 @@ const AppContent = () => {
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Suspense>
         </AnimatePresence>
@@ -68,7 +69,7 @@ const AppContent = () => {
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <AppContent />
       </Router>
     </ThemeProvider>

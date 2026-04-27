@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SlidersHorizontal, ChevronDown, LayoutGrid, List, Search, X } from 'lucide-react';
-import artworks from '../data/artworks.json';
+import artworks from '../data/artworks';
 import ProductCard from '../components/gallery/ProductCard';
 import ProductModal from '../components/gallery/ProductModal';
 import Skeleton from '../components/gallery/Skeleton';
